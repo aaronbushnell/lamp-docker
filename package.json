@@ -4,7 +4,8 @@
   "author": "Aaron Bushnell",
   "license": "MIT",
   "scripts": {
-    "up": "docker-compose up -d",
-    "down": "docker-compose down --remove-orphans"
+    "go": "docker-compose up -d",
+    "stop": "docker-compose down --remove-orphans",
+    "open": "open http://localhost"
   }
 }

@@ -7,10 +7,12 @@
 
 ## Requirements
 - [Docker for Mac](https://www.docker.com/docker-mac)
+- Node v7.8.0
+- Yarn
 
 ## Setup
-1. Clone repo to machine
-2. Run `docker-compose up -d` in directory
+1. Clone repo to machine and go into directory
+2. Run `yarn go`
 3. Go to http://localhost
 
 ## Database Info
