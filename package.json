@@ -1,0 +1,10 @@
+{
+  "name": "lamp-docker",
+  "version": "1.0.0",
+  "author": "Aaron Bushnell",
+  "license": "MIT",
+  "scripts": {
+    "up": "docker-compose up -d",
+    "down": "docker-compose down --remove-orphans"
+  }
+}
