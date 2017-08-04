@@ -1,5 +1,5 @@
 web:
-   image: tutum/apache-php
+   image: webdevops/php-apache
    environment:
      - ALLOW_OVERRIDE=true
    ports:
