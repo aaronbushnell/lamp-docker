@@ -1,13 +1,14 @@
 web:
-   image: webdevops/php-apache
-   environment:
-     - ALLOW_OVERRIDE=true
-   ports:
-     - "80:80"
-   links:
-     - data
-   volumes:
-     - ./app:/app
+  image: webdevops/php-apache
+  environment:
+    - WEB_DOCUMENT_ROOT=/src
+    - ALLOW_OVERRIDE=true
+  ports:
+    - "80:80"
+  links:
+    - data
+  volumes:
+    - ./src:/src
 
 data:
   image: mariadb
