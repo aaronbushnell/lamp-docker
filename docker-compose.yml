@@ -5,17 +5,17 @@ web:
    ports:
      - "80:80"
    links:
-     - db
+     - data
    volumes:
      - ./app:/app
 
-db:
+data:
   image: mariadb
   restart: always
   volumes:
     - ./mysql:/var/lib/mysql
   environment:
-    MYSQL_ROOT_PASSWORD: rooter
+    MYSQL_ROOT_PASSWORD: root
     MYSQL_USER: admin
     MYSQL_PASSWORD: test
     MYSQL_DATABASE: database
